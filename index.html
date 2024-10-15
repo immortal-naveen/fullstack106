@@ -6,40 +6,88 @@
     <title>My Links</title>
     <style>
         body {
-            background-color:black;
-            color: #333; 
-            font-family: Arial, sans-serif;
+            background-color: #1e1e2f; /* Darker background for a classy look */
+            color: #ffffff; /* White text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font family */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em; /* Larger font size for the main title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+        }
+        h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            font-weight: 300; /* Light font weight for elegance */
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            border-radius: 15px; /* More pronounced rounded corners */
+            padding: 30px; /* Increased inner padding */
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Softer shadow */
+            backdrop-filter: blur(5px); /* Blurring background for a classy feel */
         }
         ul {
-            list-style-type: none; 
-            padding: 0; 
+            list-style-type: none;
+            padding: 0;
         }
         li {
-            margin: 10px 0; 
+            margin: 15px 0;
         }
         a {
-            text-decoration: none; 
-            color: #1e90ff; 
+            text-decoration: none;
+            color: #1e90ff; /* Link color */
+            font-size: 1.2em;
+            border-bottom: 1px solid transparent; /* Subtle underline effect */
+            transition: color 0.3s, border-bottom 0.3s; /* Transition for color and underline */
         }
         a:hover {
-            text-decoration: underline;
+            color: #ffcc00; /* Change color on hover */
+            border-bottom: 1px solid #ffcc00; /* Underline on hover */
+        }
+        .label {
+            font-size: 0.9em; /* Smaller font size for labels */
+            color: #ccc; /* Lighter color for labels */
+            margin-top: 5px; /* Space between link and label */
         }
     </style>
 </head>
 <body>
-    <h1>Full stack lab expriments</h1>
-    <h2>By Naveen</h2>
-       <center>
-   
-        <li><a href="https://immortal-naveen.github.io/ToDo-list/">1.ToDo list</a></li>
-        <li><a href="https://immortal-naveen.github.io/micro/">2.Microblog</a></li>
-        <li><a href="https://immortal-naveen.github.io/port/">3.Portfolio</a></li>
-        <li><a href=" https://immortal-naveen.github.io/food-delivery/">4.fooddelivery</a></li>
-         <li><a href="https://immortal-naveen.github.io/web-application/">5.Classifieds App</a></li>
-       
-
-        <!-- Add more links as needed -->    
-             </center> 
-     
+    <div class="content">
+        <h1>Full Stack Lab Experiments</h1>
+        <h2>By Naveen</h2>
+        <ul>
+            <li>
+                <a href="https://immortal-naveen.github.io/ToDo-list/">1. ToDo List</a>
+                <div class="label">A simple task management app.</div>
+            </li>
+            <li>
+                <a href="https://immortal-naveen.github.io/micro/">2. Microblog</a>
+                <div class="label">A platform for short posts and updates.</div>
+            </li>
+            <li>
+                <a href="https://immortal-naveen.github.io/port/">3. Portfolio</a>
+                <div class="label">Showcase of my projects and skills.</div>
+            </li>
+            <li>
+                <a href="https://immortal-naveen.github.io/food-delivery/">4. Food Delivery</a>
+                <div class="label">An app for ordering food online.</div>
+            </li>
+            <li>
+                <a href="https://immortal-naveen.github.io/web-application/">5. Classifieds App</a>
+                <div class="label">A platform to buy and sell used products.</div>
+            </li>
+            <!-- Add more links as needed -->    
+        </ul>
+    </div>
 </body>
 </html>
